@@ -89,21 +89,13 @@
 
 - **Upsert logic for re-processing.** An idempotent `/process-transcript` that checks if a page for a given `transcript_id` already exists and updates it rather than creating a duplicate.
 
-- **Confidence scores on assignee resolution.** Surfacing the fuzzy match score and resolution reason in the API response would help consumers decide when to trust the assignment.
-
-- **Role/department heuristic as an opt-in.** Implement the fallback assignee heuristic (assign to the meeting participant whose role/department best fits the task topic) but expose it as an explicit flag (`resolve_by_role=true`) so callers can choose whether to accept it.
-
 ### Medium-Term
-
-- **Webhook / async processing.** For production use, `/process-transcript` should be async (accept → 202 → poll or webhook callback). LLM calls on long transcripts can take 10–30 seconds.
 
 - **Speaker diarisation pre-processing.** Integrate with a speech-to-text + diarisation service (e.g. AssemblyAI, Deepgram) so the system can ingest raw audio files, not just pre-formatted text transcripts.
 
 - **Multi-assignee tasks.** Extend the `Task` schema to support `assignees: list[Assignee]` for genuinely collaborative deliverables.
 
 - **Deadline reminder integration.** After persisting to Notion, send a calendar invite or Slack/Teams message to the assignee with the task deadline.
-
-- **LLM provider abstraction.** The current implementation is tightly coupled to OpenAI. Wrapping the LLM calls behind a provider interface would make it easy to swap in Anthropic Claude, Google Gemini, or a locally-hosted model.
 
 ### Long-Term
 
@@ -119,10 +111,7 @@
 
 | Tool | Integration Notes |
 |------|-------------------|
-| **Granola** | Granola exports meeting notes as structured markdown with speaker labels. The transcript ingestion layer could directly accept Granola's export format with minor parsing changes. |
 | **Google Meet / Zoom** | Both services offer auto-generated transcripts via their APIs (Google Meet with Workspace, Zoom with the Recall.ai or native transcript API). These could feed `/process-transcript` automatically on meeting end via a webhook. |
 | **Notion** | Already integrated. A natural extension is to use a Notion database (not just a page) so tasks become first-class, filterable records with a status lifecycle. |
-| **Slack** | After `/process-transcript`, a Slack bot could DM each assignee their tasks. The `/bonus/chat` chatbot endpoint could also be exposed as a Slack slash command. |
 | **Microsoft Teams** | Teams provides transcript exports in VTT format. A lightweight VTT → plain-text converter would make the service compatible with Teams recordings. |
-| **Linear / Jira** | Instead of (or in addition to) Notion, the `project_id` field already maps to a project. A `push-to-linear` or `push-to-jira` endpoint following the same `PushToNotionRequest` interface would be straightforward to add. |
 | **Calendar (Google / Outlook)** | When a deadline is resolved to a concrete date, a calendar event could be created for the assignee automatically using the Google Calendar or Microsoft Graph APIs. |
