@@ -44,3 +44,10 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+"""
+curl.exe -s -X POST "http://127.0.0.1:8000/process-transcript" -H "Content-Type: application/json" --data-binary "@request_001.json" | ConvertFrom-Json | ConvertTo-Json -Depth 20 | Set-Content -Encoding UTF8 response_001_final.json
+
+curl.exe -s -X POST "http://127.0.0.1:8000/process-transcript" -H "Content-Type: application/json" --data-binary "@request_002.json" | ConvertFrom-Json | ConvertTo-Json -Depth 20 | Set-Content -Encoding UTF8 response_002_final.json
+"""
