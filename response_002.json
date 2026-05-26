@@ -1,0 +1,154 @@
+{
+  "transcript_id": "transcript_002",
+  "topics": [
+    {
+      "topic": "Pricing Proposal",
+      "tasks": [
+        {
+          "description": "update the proposal doc with the final two-tier EU pricing version and circulate it",
+          "assignee": {
+            "employee_id": "EMP004",
+            "name": "Liam Petersen"
+          },
+          "deadline": "2025-06-12",
+          "project_id": "PRJ007"
+        }
+      ]
+    },
+    {
+      "topic": "Financial Modelling",
+      "tasks": [
+        {
+          "description": "update the financial model with the new EU pricing numbers",
+          "assignee": {
+            "employee_id": "EMP019",
+            "name": "Diego Fernández"
+          },
+          "deadline": "2025-06-16",
+          "project_id": "PRJ007"
+        }
+      ]
+    },
+    {
+      "topic": "Sales Enablement",
+      "tasks": [
+        {
+          "description": "brief the sales team on the final EU pricing approach",
+          "assignee": {
+            "employee_id": "EMP005",
+            "name": "Aisha Khan"
+          },
+          "deadline": "2025-06-17",
+          "project_id": "PRJ007"
+        }
+      ]
+    },
+    {
+      "topic": "Communications Launch",
+      "tasks": [
+        {
+          "description": "brief Clara on the external announcement, blog post and customer email",
+          "assignee": {
+            "employee_id": "EMP004",
+            "name": "Liam Petersen"
+          },
+          "deadline": "2025-06-12",
+          "project_id": "PRJ007"
+        },
+        {
+          "description": "write the external announcement, blog post and customer email for the pricing change",
+          "assignee": {
+            "employee_id": "EMP014",
+            "name": "Clara Dubois"
+          },
+          "deadline": null,
+          "project_id": "PRJ007"
+        },
+        {
+          "description": "handle the paid marketing work for the pricing launch",
+          "assignee": {
+            "employee_id": "EMP015",
+            "name": "Omar El-Sayed"
+          },
+          "deadline": null,
+          "project_id": "PRJ007"
+        }
+      ]
+    },
+    {
+      "topic": "Legal and Customer Terms",
+      "tasks": [
+        {
+          "description": "talk to legal about grandfathering and contract language for existing enterprise customers",
+          "assignee": {
+            "employee_id": "EMP005",
+            "name": "Aisha Khan"
+          },
+          "deadline": null,
+          "project_id": "PRJ007"
+        }
+      ]
+    },
+    {
+      "topic": "VAT Checkout",
+      "tasks": [
+        {
+          "description": "forward the VAT counsel memo",
+          "assignee": {
+            "employee_id": "EMP005",
+            "name": "Aisha Khan"
+          },
+          "deadline": null,
+          "project_id": "PRJ007"
+        },
+        {
+          "description": "loop in Elena and Daniel about the VAT checkout update",
+          "assignee": {
+            "employee_id": "EMP003",
+            "name": "Sofia Bianchi"
+          },
+          "deadline": "2025-06-11",
+          "project_id": "PRJ007"
+        },
+        {
+          "description": "check whether the VAT display issue affects the financial model",
+          "assignee": {
+            "employee_id": "EMP019",
+            "name": "Diego Fernández"
+          },
+          "deadline": null,
+          "project_id": "PRJ007"
+        }
+      ]
+    },
+    {
+      "topic": "Lighthouse Content Updates",
+      "tasks": [
+        {
+          "description": "coordinate with the Lighthouse content team to update or pull SEO posts that reference old pricing",
+          "assignee": {
+            "employee_id": "EMP014",
+            "name": "Clara Dubois"
+          },
+          "deadline": null,
+          "project_id": "PRJ005"
+        }
+      ]
+    },
+    {
+      "topic": "Pricing Process Retro",
+      "tasks": [
+        {
+          "description": "set up a retro on the pricing decision process",
+          "assignee": {
+            "employee_id": "EMP020",
+            "name": "Anya Volkov"
+          },
+          "deadline": "2025-07-31",
+          "project_id": "PRJ007"
+        }
+      ]
+    }
+  ],
+  "notion_page_url": "dry-run://notion/transcript_002"
+}

@@ -1,0 +1,145 @@
+{
+  "transcript_id": "transcript_001",
+  "topics": [
+    {
+      "topic": "Atlas Migration",
+      "tasks": [
+        {
+          "description": "choose UTC as the timezone assumption and document it",
+          "assignee": {
+            "employee_id": "EMP006",
+            "name": "Hugo Martín"
+          },
+          "deadline": "2025-06-13",
+          "project_id": "PRJ001"
+        },
+        {
+          "description": "take the timezone follow-up work after Hugo's migration is merged",
+          "assignee": {
+            "employee_id": "EMP010",
+            "name": "Kenji Watanabe"
+          },
+          "deadline": "2025-06-16",
+          "project_id": "PRJ001"
+        }
+      ]
+    },
+    {
+      "topic": "Design System Accessibility",
+      "tasks": [
+        {
+          "description": "fix the dark-mode accessibility issues in the new color palette and send a PR",
+          "assignee": {
+            "employee_id": "EMP007",
+            "name": "Priya Raman"
+          },
+          "deadline": null,
+          "project_id": null
+        },
+        {
+          "description": "tell Rafa to update the Figma file after the color palette fix",
+          "assignee": {
+            "employee_id": "EMP007",
+            "name": "Priya Raman"
+          },
+          "deadline": null,
+          "project_id": null
+        },
+        {
+          "description": "ping Sofia about the color palette",
+          "assignee": {
+            "employee_id": "EMP007",
+            "name": "Priya Raman"
+          },
+          "deadline": null,
+          "project_id": null
+        }
+      ]
+    },
+    {
+      "topic": "Rate-Limiting Middleware",
+      "tasks": [
+        {
+          "description": "sync with Nora on Redis reconnect handling before merging the rate-limiting middleware",
+          "assignee": {
+            "employee_id": "EMP010",
+            "name": "Kenji Watanabe"
+          },
+          "deadline": "2025-06-10",
+          "project_id": "PRJ008"
+        }
+      ]
+    },
+    {
+      "topic": "Drift Reliability",
+      "tasks": [
+        {
+          "description": "write the Drift p99 latency proposal and put it on the calendar for review",
+          "assignee": {
+            "employee_id": "EMP009",
+            "name": "Nora Lindqvist"
+          },
+          "deadline": "2025-06-18",
+          "project_id": "PRJ008"
+        }
+      ]
+    },
+    {
+      "topic": "AWS Cost Reporting",
+      "tasks": [
+        {
+          "description": "pull the AWS cost report numbers and send them to Diego",
+          "assignee": {
+            "employee_id": "EMP009",
+            "name": "Nora Lindqvist"
+          },
+          "deadline": "2025-06-11",
+          "project_id": null
+        }
+      ]
+    },
+    {
+      "topic": "Ranking Model Shadow Deployment",
+      "tasks": [
+        {
+          "description": "book a pairing session with Hugo to wire up the dual-write work for the shadow deployment",
+          "assignee": {
+            "employee_id": "EMP008",
+            "name": "Tomás Velasco"
+          },
+          "deadline": "2025-06-13",
+          "project_id": "PRJ006"
+        }
+      ]
+    },
+    {
+      "topic": "Ranking Model Documentation",
+      "tasks": [
+        {
+          "description": "finish the ranking model card documentation before the product review",
+          "assignee": {
+            "employee_id": "EMP008",
+            "name": "Tomás Velasco"
+          },
+          "deadline": "2025-06-24",
+          "project_id": "PRJ006"
+        }
+      ]
+    },
+    {
+      "topic": "On-Call Rotation",
+      "tasks": [
+        {
+          "description": "set up next month's on-call rotation and circulate a draft",
+          "assignee": {
+            "employee_id": "EMP009",
+            "name": "Nora Lindqvist"
+          },
+          "deadline": "2025-06-30",
+          "project_id": null
+        }
+      ]
+    }
+  ],
+  "notion_page_url": "dry-run://notion/transcript_001"
+}
