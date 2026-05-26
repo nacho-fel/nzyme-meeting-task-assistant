@@ -167,7 +167,7 @@ OPENAI_MODEL=gpt-4o-mini          # Default model; change to gpt-4o for higher q
 # When absent (or NOTION_DRY_RUN=true), a dry-run URL is returned instead.
 NOTION_TOKEN=secret_...
 NOTION_PARENT_PAGE_ID=<your-page-id>   # The Notion page that will contain transcript sub-pages
-NOTION_DRY_RUN=true                    # Set to false to write to Notion
+NOTION_DRY_RUN=false                    # Set to true to not write to Notion and run locally
 
 # ── Data & Logging ────────────────────────────────────────────────────────────
 DATA_DIR=./data                        # Path to the folder containing CSVs and transcripts
