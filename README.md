@@ -21,7 +21,7 @@ A FastAPI service that turns raw meeting transcripts into structured, actionable
 
 ## Architecture
 
-The system is built around **one orchestrator endpoint** that internally calls **four modular, independently-callable steps**. Each step is exposed as its own endpoint so the pipeline can be debugged and partially re-run without going through the full flow.
+The system is built around one orchestrator endpoint that internally calls four modular, independently-callable steps. Each step is exposed as its own endpoint so the pipeline can be debugged and partially re-run without going through the full flow.
 
 ```
 POST /process-transcript
