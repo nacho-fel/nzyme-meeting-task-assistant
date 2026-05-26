@@ -16,7 +16,7 @@ from app.services.pipeline import TranscriptPipeline  # noqa: E402
 
 def response_filename(transcript_id: str) -> str:
     suffix = transcript_id.split("_")[-1]
-    return f"response_{suffix}_final_final_draft.json"
+    return f"response_{suffix}.json"
 
 
 def main() -> None:
