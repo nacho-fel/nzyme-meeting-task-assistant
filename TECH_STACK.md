@@ -14,11 +14,11 @@ The stack was chosen with three constraints in mind: (1) run entirely locally wi
 
 ### FastAPI
 **Role:** Web framework for the orchestrator and all modular endpoints.  
-**Why:** FastAPI is the natural choice for a pipeline that needs to expose multiple independently-callable steps. Its dependency-injection system (`Depends`) cleanly wires shared singletons — `DataStore`, `LLMService`, `NotionService` — into each route handler without manual instantiation or global state. The automatic OpenAPI/Swagger UI (`/docs`) is a first-class deliverable: evaluators can inspect and call every endpoint interactively without a separate API client.
+**Why:** FastAPI is the natural choice for a pipeline that needs to expose multiple independently-callable steps. Its dependency-injection system (`Depends`) cleanly wires shared singletons, `DataStore`, `LLMService`, `NotionService`, into each route handler without manual instantiation or global state. The automatic OpenAPI/Swagger UI (`/docs`) is a first-class deliverable: evaluators can inspect and call every endpoint interactively without a separate API client.
 
 ### Pydantic v2
 **Role:** Request/response validation and serialisation across the entire pipeline.  
-**Why:** Required by the spec. Pydantic models serve as the API's contract — if a field is missing or the wrong type, a structured 422 is returned before any business logic runs. The `exclude=True` field option on internal audit fields (e.g. `resolution_status`, `evidence`) keeps the public JSON clean while preserving debugging information in memory. Pydantic v2's `model_validate` and `model_dump` are used throughout instead of manual dict parsing.
+**Why:** Required by the spec. Pydantic models serve as the API's contract, if a field is missing or the wrong type, a structured 422 is returned before any business logic runs.
 
 ### Pydantic-Settings
 **Role:** Environment variable and `.env` file loading.  
@@ -26,7 +26,7 @@ The stack was chosen with three constraints in mind: (1) run entirely locally wi
 
 ### Uvicorn
 **Role:** ASGI server for running FastAPI locally.  
-**Why:** The standard production-grade server for FastAPI. `--reload` mode is used during development; for production, workers would be configured explicitly.
+**Why:** The standard production-grade server for FastAPI. `--reload` mode is used during development.
 
 ---
 
@@ -34,7 +34,7 @@ The stack was chosen with three constraints in mind: (1) run entirely locally wi
 
 ### OpenAI Python SDK (`openai>=1.30`)
 **Role:** Task extraction from raw transcript text and topic clustering.  
-**Why:** GPT-4o-mini was chosen as the default model for its strong instruction-following at low cost and latency. The spec allowed any LLM provider; OpenAI was selected because the assessment provided an OpenAI API key and GPT-4o-mini has proven reliable for structured JSON extraction with `response_format={"type": "json_object"}`.
+**Why:** GPT-4o-mini was chosen as the default model for its strong instruction-following at low cost and latency.
 
 **Model used:** `gpt-4o-mini` (configurable via `OPENAI_MODEL`).
 
@@ -53,8 +53,8 @@ The stack was chosen with three constraints in mind: (1) run entirely locally wi
 ### RapidFuzz (`rapidfuzz>=3.6`)
 **Role:** Name normalisation for assignee resolution and task deduplication.  
 **Why:** RapidFuzz is a fast, MIT-licensed implementation of the FuzzyWuzzy algorithms without the GPL dependency. Two algorithms are used:
-- `fuzz.ratio` — for name matching against the organisation database (catching typos, first-name-only references, and unicode normalisation differences).
-- `fuzz.token_set_ratio` — for task deduplication (order-insensitive, handles paraphrasing like "write the runbook for Atlas" vs "Atlas runbook — write it").
+- `fuzz.ratio`: for name matching against the organisation database (catching typos, first-name-only references, and unicode normalisation differences).
+- `fuzz.token_set_ratio`: for task deduplication (order-insensitive, handles paraphrasing like "write the runbook for Atlas" vs "Atlas runbook — write it").
 
 A threshold of 86 was empirically calibrated on the sample data to avoid false positives while catching genuine near-duplicates.
 
@@ -73,12 +73,12 @@ A threshold of 86 was empirically calibrated on the sample data to avoid false p
 ## Dashboard
 
 ### Streamlit (`streamlit>=1.34`)
-**Role:** Bonus dashboard UI — task table, filters, workload chart, and chatbot.  
-**Why:** Streamlit lets you build interactive data apps in pure Python with no frontend knowledge required. For a local-first bonus deliverable, it is significantly faster to develop than Next.js while still producing a usable, visually coherent UI. The `st.dataframe`, `st.bar_chart`, and `st.chat_message` components handle the three main UI surfaces (table, chart, chatbot) without custom CSS.
+**Role:** Bonus dashboard UI: task table, filters, workload chart, and chatbot.  
+**Why:** Streamlit lets you build interactive data apps in pure Python with no frontend knowledge required. For a local-first bonus deliverable, it is significantly faster to develop than Next.js while still producing a usable, visually coherent UI.
 
 ### Pandas (`pandas>=2.0`)
 **Role:** CSV loading and tabular data manipulation in `DataStore` and the dashboard.  
-**Why:** The de-facto standard for tabular data in Python. Used to load `organization.csv` and `projects.csv`, perform membership lookups, and feed data into Streamlit's dataframe components.
+**Why:** The standard for tabular data in Python. Used to load `organization.csv` and `projects.csv`, perform membership lookups, and feed data into Streamlit's dataframe components.
 
 ---
 
