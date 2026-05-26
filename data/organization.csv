@@ -1,0 +1,21 @@
+employee_id,name,email,role,department,manager_id
+EMP001,Marta Ruiz,marta.ruiz@northwave.io,CEO,Executive,
+EMP002,Daniel Okafor,daniel.okafor@northwave.io,CTO,Engineering,EMP001
+EMP003,Sofia Bianchi,sofia.bianchi@northwave.io,Head of Product,Product,EMP001
+EMP004,Liam Petersen,liam.petersen@northwave.io,Head of Marketing,Marketing,EMP001
+EMP005,Aisha Khan,aisha.khan@northwave.io,Head of Sales,Sales,EMP001
+EMP006,Hugo Martín,hugo.martin@northwave.io,Senior Backend Engineer,Engineering,EMP002
+EMP007,Priya Raman,priya.raman@northwave.io,Senior Frontend Engineer,Engineering,EMP002
+EMP008,Tomás Velasco,tomas.velasco@northwave.io,ML Engineer,Engineering,EMP002
+EMP009,Nora Lindqvist,nora.lindqvist@northwave.io,DevOps Engineer,Engineering,EMP002
+EMP010,Kenji Watanabe,kenji.watanabe@northwave.io,Junior Backend Engineer,Engineering,EMP006
+EMP011,Elena Costa,elena.costa@northwave.io,Product Manager,Product,EMP003
+EMP012,Rafael Mendes,rafael.mendes@northwave.io,Product Designer,Product,EMP003
+EMP013,Yuki Tanaka,yuki.tanaka@northwave.io,UX Researcher,Product,EMP003
+EMP014,Clara Dubois,clara.dubois@northwave.io,Content Marketer,Marketing,EMP004
+EMP015,Omar El-Sayed,omar.elsayed@northwave.io,Growth Marketer,Marketing,EMP004
+EMP016,Ines Rovira,ines.rovira@northwave.io,Account Executive,Sales,EMP005
+EMP017,Bjorn Halvorsen,bjorn.halvorsen@northwave.io,Sales Development Rep,Sales,EMP005
+EMP018,Leila Haddad,leila.haddad@northwave.io,Customer Success Manager,Sales,EMP005
+EMP019,Diego Fernández,diego.fernandez@northwave.io,Finance Lead,Operations,EMP001
+EMP020,Anya Volkov,anya.volkov@northwave.io,People Ops,Operations,EMP001

@@ -1,0 +1,40 @@
+{
+  "transcripts": [
+    {
+      "transcript_id": "transcript_001",
+      "file": "transcripts/transcript_001.txt",
+      "meeting_title": "Engineering Standup",
+      "date": "2025-06-10",
+      "duration_minutes": 6,
+      "language": "en",
+      "participants": [
+        "EMP002",
+        "EMP006",
+        "EMP007",
+        "EMP008",
+        "EMP009",
+        "EMP010"
+      ],
+      "notes": "Daily engineering standup. Daniel (CTO) is running it. Discussion centered around the Atlas Mobile migration, the design system tokens, the rate-limiting middleware, the Drift reliability work and a few one-off asks."
+    },
+    {
+      "transcript_id": "transcript_002",
+      "file": "transcripts/transcript_002.txt",
+      "meeting_title": "EU Pricing Decision — Cross-functional Sync",
+      "date": "2025-06-11",
+      "duration_minutes": 28,
+      "language": "en",
+      "participants": [
+        "EMP001",
+        "EMP003",
+        "EMP004",
+        "EMP005",
+        "EMP015",
+        "EMP016",
+        "EMP019",
+        "EMP020"
+      ],
+      "notes": "Cross-functional decision meeting on European pricing strategy (project North Star Pricing). Marta (CEO) chairing. The team converged on a simplified two-tier uplift approach. Multiple downstream workstreams were assigned across product, sales, finance, marketing and people ops."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+Marta: ok so the goal of today is just to get to a decision on the european pricing, we've been going back and forth for like three weeks and we said we'd lock it today, so. liam can you share your screen
+
+Liam: yeah one sec
+
+Aisha: while he's doing that — marta did you see the email from the legal counsel about the vat thing
+
+Marta: yes yes ill come back to it
+
+Aisha: ok
+
+Liam: ok can you see it
+
+Marta: yeah
+
+Liam: ok so to recap, we have basically three options on the table. option a is what omar pulled together, it's like a flat 15% uplift across the board for the eu, simple, easy to explain to customers. option b is the tiered thing diego proposed which is different uplifts per plan, like starter pays less, enterprise pays more. and option c is the bundle approach where we just relaunch with new tiers entirely. ok.
+
+Marta: ok and where are we leaning
+
+Sofia: i mean from product i think c is the most interesting but also the most disruptive
+
+Marta: yeah
+
+Aisha: from sales c is a nightmare to be honest, we have customers in the middle of renewal cycles and if we change the tiers we have to renegotiate all of them, it's like — i don't have the bandwidth
+
+Marta: hm
+
+Diego: also from a finance perspective option c we can't model the impact properly because we don't have analog data, we'd be guessing
+
+Sofia: ok fair
+
+Marta: ok so c is out? yeah?
+
+Liam: i think c is out yeah
+
+Marta: ok. between a and b
+
+Omar: i mean i still think a is better just because it's so much easier to communicate, like our pricing page already has a footnote we can update, that's it
+
+Diego: yeah but you're leaving money on the table omar, like the enterprise customers don't care about a 15% uplift they'll pay 25 and not blink, the starter customers though, 15% is gonna cause churn for sure
+
+Aisha: i agree with diego actually
+
+Omar: ok but the churn assumption — where is that coming from, we don't have data on price sensitivity for the starter tier
+
+Diego: we have the survey from february
+
+Omar: that survey was bad diego come on it had like 40 respondents
+
+Diego: ok 40 is not — ok fine it's not perfect but it's signal
+
+Marta: ok ok let's not — uhm. ok here's what i think. let's do b but simpler. like two tiers of uplift not five. starter and pro get 10%, business and enterprise get 25%. easy to explain, easy to model, captures most of the upside. does that work?
+
+Sofia: yeah that works for me
+
+Aisha: i can sell that
+
+Omar: yeah ok
+
+Diego: yeah i can model it
+
+Marta: ok great. so liam can you update the proposal doc with this, like the final version, and circulate it before friday so we can — actually no, before thursday because we have the board meeting friday morning
+
+Liam: ok thursday
+
+Marta: and diego can you do the financial model with the new numbers
+
+Diego: yeah ill have it by wednesday eod
+
+Marta: 🙌. aisha you need to brief the sales team obviously, when can you do that
+
+Aisha: uhm the all-hands is on tuesday so i can do it then if we have the final numbers by monday eod
+
+Marta: diego can you turn around the model by monday eod instead of wednesday
+
+Diego: uh — yeah ok i'll make it work, ill probably need to skip the compass analytics review meeting then though
+
+Marta: that's fine just tell elena. um. ok. what about communications externally, when do we announce
+
+Liam: i think we need a proper launch, we can't just update the pricing page silently
+
+Marta: agreed
+
+Liam: so clara needs to write the announcement, blog post and the customer email, omar will handle the paid stuff but that's later
+
+Marta: ok can you brief clara today or tomorrow
+
+Liam: yeah ill grab her this afternoon
+
+Marta: and what's the timeline for the announcement
+
+Liam: i'd say two weeks out from the actual price change date, gives customers time
+
+Sofia: are we doing anything for existing customers, like grandfathering
+
+Aisha: oh god yes please
+
+Marta: yeah we need to. um. who owns that
+
+Aisha: i'll do it but i need legal to weigh in, the contracts language for the existing enterprise customers is — it's messy
+
+Marta: ok talk to legal. and — oh wait that reminds me, the vat thing aisha you mentioned
+
+Aisha: yeah so basically counsel says we need to handle the vat display differently for b2c vs b2b in like germany and france specifically, and we're not doing it right currently. she sent me a memo i can forward it
+
+Marta: that's an engineering thing right? we need to update the checkout?
+
+Sofia: yeah elena would own that on product side. is daniel on this call? no.
+
+Marta: ok sofia can you loop in elena and daniel after this, and also — diego does this affect your model
+
+Diego: only marginally i think but ill take a look
+
+Marta: ok. ines you've been quiet, anything from your side, you have the most enterprise deals in flight right
+
+Ines: yeah uhm i mean i'd just say please please give me at least three weeks heads up before any of this hits, i have two contracts in late stage and if the pricing shifts under me they'll walk
+
+Marta: ok yeah you have three weeks minimum
+
+Ines: thank you
+
+Marta: oh and — clara should also coordinate with the lighthouse content team, like the seo posts that are scheduled, some of them reference the old pricing, those need to be updated or pulled
+
+Liam: yeah ill add that to clara's brief
+
+Marta: ok. anything else?
+
+Sofia: no i think we're good
+
+Marta: cool. ah, one more thing — i want a retro on this whole process in like a month because it took us way too long to get here, we need to figure out why. anya can you set that up
+
+Anya: yeah ill send out a calendar invite, like end of july?
+
+Marta: yeah perfect. ok thanks everyone. ines hang on for a sec i want to ask you about the harbor deal
+
+[others leave]

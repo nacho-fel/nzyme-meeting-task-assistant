@@ -1,0 +1,9 @@
+project_id,name,description,status,members
+PRJ001,Atlas Mobile,Native mobile app rewrite to replace the legacy hybrid app. Targeting Q3 launch.,active,"EMP002,EMP007,EMP010,EMP011,EMP012"
+PRJ002,Compass Analytics,Internal analytics platform to unify product and revenue data into a single warehouse.,active,"EMP002,EMP006,EMP008,EMP011,EMP019"
+PRJ003,Beacon Onboarding,Redesign of the user onboarding flow to improve activation rate.,active,"EMP003,EMP011,EMP012,EMP013,EMP015"
+PRJ004,Harbor Enterprise,"Enterprise tier launch including SSO, audit logs and dedicated support.",active,"EMP001,EMP005,EMP009,EMP016,EMP018"
+PRJ005,Lighthouse Content,Q3 content and SEO push to grow inbound demo requests.,active,"EMP004,EMP014,EMP015"
+PRJ006,Tide ML Ranking,New ML-based ranking model for the recommendations feed.,active,"EMP002,EMP008,EMP011"
+PRJ007,North Star Pricing,Repackaging of plans and pricing for the European market.,active,"EMP001,EMP003,EMP004,EMP005,EMP019"
+PRJ008,Drift Reliability,Cross-team initiative to bring P99 latency under 300ms and reduce incidents.,active,"EMP002,EMP006,EMP009,EMP010"
