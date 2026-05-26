@@ -82,21 +82,6 @@ A threshold of 86 was empirically calibrated on the sample data to avoid false p
 
 ---
 
-## Testing
-
-### pytest (`pytest>=8.0`)
-**Role:** Unit and integration tests.  
-**Why:** The standard Python test runner. Three test files cover the highest-risk components:
-- `test_deadline_parser.py` — edge cases in relative deadline normalisation (weekday wrapping, ordinal days, soft-word stripping, vague phrases).
-- `test_pipeline_outputs.py` — end-to-end extraction quality: verifies that the expected tasks, assignees, and deadlines appear in the pipeline output for both sample transcripts.
-- `test_bonus_chatbot.py` — chatbot grounding: verifies that out-of-scope questions are refused and that in-scope queries return the correct task subset.
-
-### httpx (`httpx>=0.26`)
-**Role:** HTTP client used in scripts and optionally in tests.  
-**Why:** Async-first, modern replacement for `requests`. Used by `scripts/run_samples.py` to call the local API and capture response JSON.
-
----
-
 ## Models & Services — Decision Summary
 
 | Component | Choice | Alternative Considered | Reason for Choice |
